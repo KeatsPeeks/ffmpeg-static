@@ -13,12 +13,15 @@ if (platform === 'darwin' && arch !== 'x64') {
   process.exit(1)
 }
 
-var ffmpegPath = path.join(
+function getPath(base) {
+  return path.join(
   __dirname,
   'bin',
   platform,
   arch,
-  platform === 'win32' ? 'ffmpeg.exe' : 'ffmpeg'
-)
+  platform === 'win32' ? base + '.exe' : base
+  );
+}
 
-exports.path = ffmpegPath;
+exports.ffmpeg = {path: getPath('ffmpeg')};
+exports.ffprobe = {path: getPath('ffprobe')};
