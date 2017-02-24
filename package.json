@@ -1,14 +1,14 @@
 {
   "name": "ffmpeg-static",
-  "version": "2.0.0",
-  "description": "ffmpeg static binaries for Mac OSX and Linux and Windows",
+  "version": "3.0.0",
+  "description": "ffmpeg/ffprobe static binaries for Mac OSX and Linux and Windows",
   "main": "index.js",
   "scripts": {
     "test": "node_modules/.bin/tape test/*.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/eugeneware/ffmpeg-static"
+    "url": "https://github.com/KeatsPeeks/ffmpeg-static"
   },
   "keywords": [
     "ffmpeg",
@@ -23,7 +23,7 @@
   "author": "Eugene Ware <eugene@noblesamurai.com>",
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/eugeneware/ffmpeg-static/issues"
+    "url": "https://github.com/KeatsPeeks/ffmpeg-static/issues"
   },
   "dependencies": {},
   "devDependencies": {
